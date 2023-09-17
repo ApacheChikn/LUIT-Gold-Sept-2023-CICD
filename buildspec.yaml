@@ -3,4 +3,4 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws s3 sync "C:\Users\shawn\devspace\Cloud_LUIT\LUIT-Gold-Sept-2023-CICD" s3://luit-gold-september-2023-cicd-beta/ --acl public-read
+      - aws s3 sync C:\\Users\\shawn\\devspace\\Cloud_LUIT\\LUIT-Gold-Sept-2023-CICD s3://luit-gold-september-2023-cicd-beta/ --acl public-read
