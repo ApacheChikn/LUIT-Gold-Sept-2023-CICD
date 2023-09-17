@@ -1,0 +1,16 @@
+Command Line Interface Commands:
+================================================================
+
+This command will copy one file from local machine to AWS S3 bucket and make it Public Accessible. Choose bucket name.
+
+> aws s3 cp index.html s3://luit-gold-september-2023-cicd-beta/index.html --acl public-read
+
+> aws s3 cp index.html s3://luit-gold-september-2023-cicd-prod/index.html --acl public-read
+
+================================================================
+
+This command will sync one Windows directory to AWS S3 bucket and make it Public Accessible.
+
+> aws s3 sync C:\Users\shawn\devspace\Cloud_LUIT\LUIT-Gold-Sept-2023-CICD s3://luit-gold-september-2023-cicd-beta/ --acl public-read
+
+================================================================
