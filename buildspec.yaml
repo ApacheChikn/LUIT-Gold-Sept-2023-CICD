@@ -1,6 +1,14 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      aws-cli: 2  # Install AWS CLI version 2
+
   build:
     commands:
       - aws s3 sync "C:\Users\shawn\devspace\Cloud_LUIT\LUIT-Gold-Sept-2023-CICD" s3://luit-gold-september-2023-cicd-beta/ --acl public-read
+
+artifacts:
+  files: []
+  discard-paths: yes
