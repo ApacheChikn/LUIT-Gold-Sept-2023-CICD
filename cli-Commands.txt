@@ -1,0 +1,4 @@
+
+aws s3 cp index.html s3://luit-gold-september-2023-cicd-beta/index.html --acl public-read
+
+aws s3 cp index.html s3://luit-gold-september-2023-cicd-prod/index.html --acl public-read
